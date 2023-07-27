@@ -1,0 +1,16 @@
+Package: HLADiversity
+Type: Package
+Title: This package computes and plots the diversity of HLA alleles
+Version: 0.1.0
+Author: Ruth Nanjala
+Maintainer: The package maintainer <rnanjeee@gmail.com>
+Description: The package takes in a HPED file, 
+  calculates allele frequencies and plots the outcome 
+  including the diversity of HLA alleles in different populations.
+License: CC0
+Encoding: UTF-8
+LazyData: true
+Depends: 
+    R (>= 2.10)
+URL: https://github.com/nanjalaruth/HLADiversity
+BugReports: https://github.com/nanjalaruth/HLADiversity/issues

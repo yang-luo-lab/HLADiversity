@@ -1,0 +1,40 @@
+---
+output: github_document
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# HLADiversity
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of HLADiversity is to estimate the distinctiveness of HLA alleles. 
+
+## Input file format
+
+
+## Installation
+
+You can install the development version of HLADiversity from [GitHub](https://github.com) with:
+
+``` r
+devtools::install_github("yang-luo-lab/HLADiversity")
+```
+
+## Example
+
+This is a basic example of how to run one of the functions:
+
+```{r example}
+library(HLADiversity)
+
+Plot_HLA_Diversity(example_data, gene = "A", ntop = 5)
+```
