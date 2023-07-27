@@ -142,7 +142,7 @@ Plot_HLA_target_vs_ref <- function(tgt_hped, ref_hped){
 
 # -------------------------------------------------------------------------
 #Plot the diversity of HLA alleles
-plot_HLA_Diversity <-  function(hped, gene = "A", ntop = 2){
+Plot_HLA_Diversity <-  function(hped, gene = "A", ntop = 2){
 
   #load libraries
   if(!require(pacman)) install.packages("pacman")
@@ -212,3 +212,4 @@ plot_HLA_Diversity <-  function(hped, gene = "A", ntop = 2){
           axis.title.x = element_text(size = 18), axis.title.y = element_text(size = 18)) +
     scale_fill_manual(values = custom_colors5)
 }
+
