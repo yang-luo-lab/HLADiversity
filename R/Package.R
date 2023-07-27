@@ -176,8 +176,8 @@ plot_HLA_Diversity <-  function(hped, gene = "A", ntop = 2){
               allele_count = allele_count)
 
   tgt_al_freq  <- as_tibble(final) %>%
-    separate(col = alleles, into = c("HLA_gene", NA), sep = "[*]", remove = F) #%>%
-    #filter(HLA_gene == gene )
+    separate(col = alleles, into = c("HLA_gene", NA), sep = "[*]", remove = F) %>%
+    filter(HLA_gene == gene )
   tgt_al_freq  <<- tgt_al_freq
 
   #sort and rank
