@@ -1,5 +1,4 @@
-
-# HLADiversity
+# HLADiversity R Package
 
 <!-- badges: start -->
 <!-- badges: end -->
