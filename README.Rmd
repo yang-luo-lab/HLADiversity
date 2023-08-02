@@ -31,10 +31,30 @@ devtools::install_github("yang-luo-lab/HLADiversity")
 
 ## Example
 
-This is a basic example of how to run one of the functions:
+This is a basic example of how to run the functions:
 
-```{r example}
+```{r }
 library(HLADiversity)
-
-Plot_HLA_Diversity(example_data, gene = "A", ntop = 5)
 ```
+
+```{r }
+head(calculate_HLA_frequency(reference))
+```
+
+```{r }
+Plot_HLA_allele_frequency(reference, minFreq = 0.05)
+```
+
+```{r }
+Plot_HLA_allele_count(reference)
+```
+
+```{r }
+Plot_HLA_target_vs_ref(target, reference)
+```
+
+```{r}
+plot_HLA_Diversity(reference, gene = "A", ntop = 5)
+```
+
+
