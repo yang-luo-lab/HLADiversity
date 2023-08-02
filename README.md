@@ -41,8 +41,8 @@ devtools::install_github("yang-luo-lab/HLADiversity")
 ```
 
 ## Example
-The example data is from the 1000 Genomes Project.
-[https://www.internationalgenome.org/](https://www.internationalgenome.org/)
+The example data is from the 1000 Genomes Project
+[https://www.internationalgenome.org/](https://www.internationalgenome.org/).
 This is a basic example of how to run one of the functions:
 
 ``` r
