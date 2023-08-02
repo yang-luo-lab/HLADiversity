@@ -77,7 +77,7 @@ Plot_HLA_allele_count(reference)
 
 <img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
 
-#### Function 4: Compare frequecy of target to reference
+#### Function 4: Compare frequency of target to reference
 ``` r
 Plot_HLA_target_vs_ref(target, reference)
 #> `geom_smooth()` using formula = 'y ~ x'
