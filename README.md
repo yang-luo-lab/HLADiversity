@@ -44,10 +44,12 @@ devtools::install_github("yang-luo-lab/HLADiversity")
 
 This is a basic example of how to run the functions:
 
+### Load Library
 ``` r
 library(HLADiversity)
 ```
 
+### Function 1
 ``` r
 head(calculate_HLA_frequency(reference))
 #> Loading required package: pacman
@@ -60,8 +62,8 @@ head(calculate_HLA_frequency(reference))
 #> 6 A*02:07 0.006312076   272
 ```
 
+### Function 2
 ``` r
-
 Plot_HLA_allele_frequency(reference, minFreq = 0.05)
 #> Warning: Expected 2 pieces. Additional pieces discarded in 1 rows [481].
 #> Warning: Expected 2 pieces. Missing pieces filled with `NA` in 1 rows [757].
@@ -69,8 +71,8 @@ Plot_HLA_allele_frequency(reference, minFreq = 0.05)
 
 <img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
 
+### Function 3
 ``` r
-
 Plot_HLA_allele_count(reference)
 #> Warning: Expected 2 pieces. Additional pieces discarded in 1 rows [481].
 #> Warning: Expected 2 pieces. Missing pieces filled with `NA` in 1 rows [757].
@@ -78,16 +80,16 @@ Plot_HLA_allele_count(reference)
 
 <img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
 
+### Function 4
 ``` r
-
 Plot_HLA_target_vs_ref(target, reference)
 #> `geom_smooth()` using formula = 'y ~ x'
 ```
 
 <img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
 
+### Function 5
 ``` r
-
 plot_HLA_Diversity(reference, gene = "A", ntop = 5)
 #> Warning: Expected 2 pieces. Additional pieces discarded in 1 rows [1201].
 #> Warning: Expected 2 pieces. Missing pieces filled with `NA` in 1 rows [1].
@@ -96,6 +98,7 @@ plot_HLA_Diversity(reference, gene = "A", ntop = 5)
 
 <img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
 
+## Help
 - Find a description of each function and how to run it by invoking a question mark before the function in R console.
 ```
 ?calculate_HLA_frequency
