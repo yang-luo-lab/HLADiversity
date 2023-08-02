@@ -1,4 +1,4 @@
-# HLADiversity
+# HLADiversity R Package
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -40,16 +40,15 @@ You can install the development version of HLADiversity from
 devtools::install_github("yang-luo-lab/HLADiversity")
 ```
 
-## Examples
+## Running the functions
 - The example datasets are derived from the 1000 Genomes (reference) and GGVP (target)  datasets: [https://www.internationalgenome.org/](https://www.internationalgenome.org/)
-- These are examples of how to run the functions:
 
-### Load Library
+#### Load Library
 ``` r
 library(HLADiversity)
 ```
 
-### Function 1: Calculate HLA allele frequency
+#### Function 1: Calculate HLA allele frequency
 ``` r
 head(calculate_HLA_frequency(reference))
 #> Loading required package: pacman
@@ -62,14 +61,14 @@ head(calculate_HLA_frequency(reference))
 #> 6 A*02:07 0.006312076   272
 ```
 
-### Function 2: Plot HLA allele frequecies
+#### Function 2: Plot HLA allele frequecies
 ``` r
 Plot_HLA_allele_frequency(target, minFreq = 0.05)
 ```
 
 <img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
 
-### Function 3: Plot HLA allele counts
+#### Function 3: Plot HLA allele counts
 ``` r
 Plot_HLA_allele_count(reference)
 #> Warning: Expected 2 pieces. Additional pieces discarded in 1 rows [481].
@@ -78,7 +77,7 @@ Plot_HLA_allele_count(reference)
 
 <img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
 
-### Function 4: Compare frequecy of target to reference
+#### Function 4: Compare frequecy of target to reference
 ``` r
 Plot_HLA_target_vs_ref(target, reference)
 #> `geom_smooth()` using formula = 'y ~ x'
@@ -86,7 +85,7 @@ Plot_HLA_target_vs_ref(target, reference)
 
 <img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
 
-### Function 5: Plot HLA allele diversity
+#### Function 5: Plot HLA allele diversity
 ``` r
 plot_HLA_Diversity(reference, gene = "A", ntop = 5)
 #> Warning: Expected 2 pieces. Additional pieces discarded in 1 rows [1201].
