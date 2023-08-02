@@ -42,7 +42,7 @@ head(calculate_HLA_frequency(reference))
 ```
 
 ```{r }
-Plot_HLA_allele_frequency(reference, minFreq = 0.05)
+Plot_HLA_allele_frequency(target, minFreq = 0.05)
 ```
 
 ```{r }
