@@ -1,4 +1,3 @@
-
 # HLADiversity
 
 <!-- badges: start -->
@@ -42,7 +41,7 @@ devtools::install_github("yang-luo-lab/HLADiversity")
 ```
 
 ## Examples
-
+The example datasets are derived from the 1000 Genomes and GGVP datasets: [https://www.internationalgenome.org/](https://www.internationalgenome.org/)
 These are basic examples of how to run the functions:
 
 ``` r
@@ -89,10 +88,11 @@ plot_HLA_Diversity(reference, gene = "A", ntop = 5)
 #> Warning: Expected 2 pieces. Additional pieces discarded in 1 rows [1200].
 ```
 
+<img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
+
 ## Help
 Find a description of each function and how to run it by invoking a question mark before the function in R console.
 ```
 ?calculate_HLA_frequency
 ```
 
-<img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
