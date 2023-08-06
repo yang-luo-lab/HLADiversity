@@ -14,3 +14,17 @@ Depends:
     R (>= 2.10)
 URL: https://github.com/nanjalaruth/HLADiversity
 BugReports: https://github.com/nanjalaruth/HLADiversity/issues
+Imports:
+    pacman,
+    stringr,
+    plyr,
+    RColorBrewer,
+    vroom,
+    janitor,
+    patchwork,
+    tidyverse,
+    devtools,
+    ggpubr,
+    ggpmisc,
+    purrr,
+    data.table
