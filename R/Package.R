@@ -1,11 +1,6 @@
 # Define a function to calculate allele frequencies for the sample data
 calculate_HLA_frequency <- function(hped) {
 
-  #load libraries
-  # if(!require(pacman)) install.packages("pacman")
-  # pacman::p_load(stringr, plyr, RColorBrewer, vroom, janitor,
-  #   patchwork, tidyverse, devtools, ggpubr, ggpmisc, purrr, data.table)
-
   hped %>% drop_na()
 
   #read in data

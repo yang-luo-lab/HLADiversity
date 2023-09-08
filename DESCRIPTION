@@ -26,7 +26,6 @@ Imports:
     purrr (>= 1.0.1),
     data.table (>= 1.14.8),
     tidyr 
-    
 URL: https://github.com/nanjalaruth/HLADiversity
 BugReports: https://github.com/nanjalaruth/HLADiversity/issues
 RoxygenNote: 7.2.3
