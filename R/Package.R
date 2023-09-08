@@ -2,9 +2,9 @@
 calculate_HLA_frequency <- function(hped) {
 
   #load libraries
-  if(!require(pacman)) install.packages("pacman")
-  pacman::p_load(stringr, plyr, RColorBrewer, vroom, janitor,
-    patchwork, tidyverse, devtools, ggpubr, ggpmisc, purrr, data.table)
+  # if(!require(pacman)) install.packages("pacman")
+  # pacman::p_load(stringr, plyr, RColorBrewer, vroom, janitor,
+  #   patchwork, tidyverse, devtools, ggpubr, ggpmisc, purrr, data.table)
 
   hped %>% drop_na()
 
@@ -142,12 +142,7 @@ Plot_HLA_target_vs_ref <- function(tgt_hped, ref_hped){
 
 # -------------------------------------------------------------------------
 #Plot the diversity of HLA alleles
-Plot_HLA_Diversity <-  function(hped, gene = "A", ntop = 2){
-
-  #load libraries
-  if(!require(pacman)) install.packages("pacman")
-  pacman::p_load(stringr, plyr, RColorBrewer, vroom, janitor,
-                 patchwork, tidyverse, devtools, ggpubr, ggpmisc, purrr, data.table)
+plot_HLA_Diversity <-  function(hped, gene = "A", ntop = 2){
 
   #calculate frequency
   df_formatted <- hped %>%
@@ -212,4 +207,3 @@ Plot_HLA_Diversity <-  function(hped, gene = "A", ntop = 2){
           axis.title.x = element_text(size = 18), axis.title.y = element_text(size = 18)) +
     scale_fill_manual(values = custom_colors5)
 }
-
