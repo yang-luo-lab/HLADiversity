@@ -25,7 +25,10 @@ Imports:
     ggpmisc (>= 0.5.2),
     purrr (>= 1.0.1),
     data.table (>= 1.14.8),
-    tidyr 
+    tidyr,
+    dplyr,
+    ggplot2,
+    tibble
 URL: https://github.com/nanjalaruth/HLADiversity
 BugReports: https://github.com/nanjalaruth/HLADiversity/issues
 RoxygenNote: 7.2.3
