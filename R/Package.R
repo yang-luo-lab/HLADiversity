@@ -188,7 +188,7 @@ plot_HLA_Diversity <-  function(hped, gene = "A", ntop = 2){
   #plot
   tgt_al_freq %>%
     mutate(
-      Label=if_else(alleles %in%  unic & allele_freq > 0.05, alleles, "others")) %>%
+      Label=if_else(alleles %in%  unic, alleles, "others")) %>%
     group_by(population, Label) %>% dplyr::summarise(freq2 = sum(allele_freq)) %>%
     ggplot( aes(y=freq2, x=population, fill=Label)) +
     geom_bar(stat = "identity", show.legend = FALSE) +
