@@ -16,7 +16,7 @@ alleles.
 ## Data Format
 The input data has to be a HLA PED file in tsv format. 
 The columns of the HLA PED file should be in the format shown below. 
- - 4-digit HLA class I and II alleles (A, B, C, DQA1, DQB1, DRB1, DPA1, DPB1)
+ - HLA class I and II alleles (A, B, C, DQA1, DQB1, DRB1, DPA1, DPB1)
  - HLA allele column name separator is "."
  - Include population column 
 
